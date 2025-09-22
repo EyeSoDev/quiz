@@ -1,12 +1,91 @@
-# React + Vite
+## Personality Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React app that lets users take a fun personality quiz, then shows their element (🔥 Fire, 💧 Water, 🌱 Earth, 🌬 Air) with artwork and a random mascot fetched from external APIs.
+Built as a demo project using **React + React Router + Context + Fetch API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+* 👤 User enters their name before starting the quiz
+* ❓ Multiple-choice quiz with simple flow
+* 🧩 Results page showing:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Your element (based on answers)
+  * Random artwork from [Met Museum API](https://metmuseum.github.io/)
+* 🎨 Minimal styling with plain CSS
+
+---
+
+## Tech Stack
+
+* React (Vite)
+* React Router
+* Context API for global state
+* Fetch API for external data
+
+---
+
+## Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/EyeSoDev/quiz.git
+cd quiz
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the dev server
+
+```bash
+npm run dev
+```
+
+### 4. Open in browser
+
+Go to [http://localhost:5173](http://localhost:5173)
+
+---
+
+## Project Structure
+
+```
+quiz/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Question.jsx
+│   │   ├── Results.jsx
+│   │   ├── UserContext.jsx
+│   │   ├── UserForm.jsx
+│   ├── App.css
+|   |── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+```
+
+---
+
+## APIs Used
+
+* 🖼 Met Museum Collection API — fetch artwork to display with results
+
+---
+
+## License
+
+MIT
+
+---
